@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		807EA58B9945D5D7EDB261EA /* Pods_JCLoadingView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B93639445EA7DEE692E5EEB /* Pods_JCLoadingView.framework */; };
+		FC4820A1260373D800DFC9BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820A0260373D800DFC9BE /* AppDelegate.m */; };
+		FC4820A7260373D800DFC9BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820A6260373D800DFC9BE /* ViewController.m */; };
+		FC4820AC260373DA00DFC9BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4820AB260373DA00DFC9BE /* Assets.xcassets */; };
+		FC4820AF260373DA00DFC9BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4820AD260373DA00DFC9BE /* LaunchScreen.storyboard */; };
+		FC4820B2260373DA00DFC9BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820B1260373DA00DFC9BE /* main.m */; };
+		FC4820BC260373DA00DFC9BE /* JCLoadingViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820BB260373DA00DFC9BE /* JCLoadingViewTests.m */; };
+		FC4820C7260373DB00DFC9BE /* JCLoadingViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820C6260373DB00DFC9BE /* JCLoadingViewUITests.m */; };
+		FC4820DA260375BD00DFC9BE /* JCLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820D9260375BD00DFC9BE /* JCLoadingView.m */; };
+		FC4820EB26037A1400DFC9BE /* UIView+LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820EA26037A1400DFC9BE /* UIView+LoadingView.m */; };
+		FC4820FD26037E1600DFC9BE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC4820FC26037E1600DFC9BE /* SceneDelegate.m */; };
+		FC48210226037E1D00DFC9BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC48210126037E1D00DFC9BE /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC4820B8260373DA00DFC9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC482094260373D800DFC9BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC48209B260373D800DFC9BE;
+			remoteInfo = JCLoadingView;
+		};
+		FC4820C3260373DB00DFC9BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC482094260373D800DFC9BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC48209B260373D800DFC9BE;
+			remoteInfo = JCLoadingView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B93639445EA7DEE692E5EEB /* Pods_JCLoadingView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCLoadingView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9662144EF1B812D7C4627E37 /* Pods-JCLoadingView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCLoadingView.debug.xcconfig"; path = "Target Support Files/Pods-JCLoadingView/Pods-JCLoadingView.debug.xcconfig"; sourceTree = "<group>"; };
+		FC48209C260373D800DFC9BE /* JCLoadingView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCLoadingView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC48209F260373D800DFC9BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC4820A0260373D800DFC9BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC4820A5260373D800DFC9BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC4820A6260373D800DFC9BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC4820AB260373DA00DFC9BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC4820AE260373DA00DFC9BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC4820B0260373DA00DFC9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4820B1260373DA00DFC9BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC4820B7260373DA00DFC9BE /* JCLoadingViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCLoadingViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4820BB260373DA00DFC9BE /* JCLoadingViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCLoadingViewTests.m; sourceTree = "<group>"; };
+		FC4820BD260373DB00DFC9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4820C2260373DB00DFC9BE /* JCLoadingViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCLoadingViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC4820C6260373DB00DFC9BE /* JCLoadingViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCLoadingViewUITests.m; sourceTree = "<group>"; };
+		FC4820C8260373DB00DFC9BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4820D8260375BD00DFC9BE /* JCLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCLoadingView.h; sourceTree = "<group>"; };
+		FC4820D9260375BD00DFC9BE /* JCLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCLoadingView.m; sourceTree = "<group>"; };
+		FC4820E926037A1400DFC9BE /* UIView+LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+LoadingView.h"; sourceTree = "<group>"; };
+		FC4820EA26037A1400DFC9BE /* UIView+LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+LoadingView.m"; sourceTree = "<group>"; };
+		FC4820FB26037E1600DFC9BE /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		FC4820FC26037E1600DFC9BE /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		FC48210126037E1D00DFC9BE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FE343F5E09883BEE5AB58885 /* Pods-JCLoadingView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCLoadingView.release.xcconfig"; path = "Target Support Files/Pods-JCLoadingView/Pods-JCLoadingView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC482099260373D800DFC9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				807EA58B9945D5D7EDB261EA /* Pods_JCLoadingView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4820B4260373DA00DFC9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4820BF260373DB00DFC9BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7F9463023B124BE0AA94136 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9662144EF1B812D7C4627E37 /* Pods-JCLoadingView.debug.xcconfig */,
+				FE343F5E09883BEE5AB58885 /* Pods-JCLoadingView.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F3204F012509CBF362C6CAA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B93639445EA7DEE692E5EEB /* Pods_JCLoadingView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC482093260373D800DFC9BE = {
+			isa = PBXGroup;
+			children = (
+				FC48209E260373D800DFC9BE /* JCLoadingView */,
+				FC4820BA260373DA00DFC9BE /* JCLoadingViewTests */,
+				FC4820C5260373DB00DFC9BE /* JCLoadingViewUITests */,
+				FC48209D260373D800DFC9BE /* Products */,
+				C7F9463023B124BE0AA94136 /* Pods */,
+				F3204F012509CBF362C6CAA4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC48209D260373D800DFC9BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC48209C260373D800DFC9BE /* JCLoadingView.app */,
+				FC4820B7260373DA00DFC9BE /* JCLoadingViewTests.xctest */,
+				FC4820C2260373DB00DFC9BE /* JCLoadingViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC48209E260373D800DFC9BE /* JCLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				FC4820D72603759B00DFC9BE /* LoadingView */,
+				FC48209F260373D800DFC9BE /* AppDelegate.h */,
+				FC4820A0260373D800DFC9BE /* AppDelegate.m */,
+				FC4820FB26037E1600DFC9BE /* SceneDelegate.h */,
+				FC4820FC26037E1600DFC9BE /* SceneDelegate.m */,
+				FC4820A5260373D800DFC9BE /* ViewController.h */,
+				FC4820A6260373D800DFC9BE /* ViewController.m */,
+				FC4820AB260373DA00DFC9BE /* Assets.xcassets */,
+				FC4820AD260373DA00DFC9BE /* LaunchScreen.storyboard */,
+				FC48210126037E1D00DFC9BE /* Main.storyboard */,
+				FC4820B0260373DA00DFC9BE /* Info.plist */,
+				FC4820B1260373DA00DFC9BE /* main.m */,
+			);
+			path = JCLoadingView;
+			sourceTree = "<group>";
+		};
+		FC4820BA260373DA00DFC9BE /* JCLoadingViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC4820BB260373DA00DFC9BE /* JCLoadingViewTests.m */,
+				FC4820BD260373DB00DFC9BE /* Info.plist */,
+			);
+			path = JCLoadingViewTests;
+			sourceTree = "<group>";
+		};
+		FC4820C5260373DB00DFC9BE /* JCLoadingViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC4820C6260373DB00DFC9BE /* JCLoadingViewUITests.m */,
+				FC4820C8260373DB00DFC9BE /* Info.plist */,
+			);
+			path = JCLoadingViewUITests;
+			sourceTree = "<group>";
+		};
+		FC4820D72603759B00DFC9BE /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				FC4820D8260375BD00DFC9BE /* JCLoadingView.h */,
+				FC4820D9260375BD00DFC9BE /* JCLoadingView.m */,
+				FC4820E926037A1400DFC9BE /* UIView+LoadingView.h */,
+				FC4820EA26037A1400DFC9BE /* UIView+LoadingView.m */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC48209B260373D800DFC9BE /* JCLoadingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4820CB260373DB00DFC9BE /* Build configuration list for PBXNativeTarget "JCLoadingView" */;
+			buildPhases = (
+				BEA7A339315CDF5479D24861 /* [CP] Check Pods Manifest.lock */,
+				FC482098260373D800DFC9BE /* Sources */,
+				FC482099260373D800DFC9BE /* Frameworks */,
+				FC48209A260373D800DFC9BE /* Resources */,
+				CA15F1B0E7BB6D68BEF43C1A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCLoadingView;
+			productName = JCLoadingView;
+			productReference = FC48209C260373D800DFC9BE /* JCLoadingView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC4820B6260373DA00DFC9BE /* JCLoadingViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4820CE260373DB00DFC9BE /* Build configuration list for PBXNativeTarget "JCLoadingViewTests" */;
+			buildPhases = (
+				FC4820B3260373DA00DFC9BE /* Sources */,
+				FC4820B4260373DA00DFC9BE /* Frameworks */,
+				FC4820B5260373DA00DFC9BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC4820B9260373DA00DFC9BE /* PBXTargetDependency */,
+			);
+			name = JCLoadingViewTests;
+			productName = JCLoadingViewTests;
+			productReference = FC4820B7260373DA00DFC9BE /* JCLoadingViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC4820C1260373DB00DFC9BE /* JCLoadingViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4820D1260373DB00DFC9BE /* Build configuration list for PBXNativeTarget "JCLoadingViewUITests" */;
+			buildPhases = (
+				FC4820BE260373DB00DFC9BE /* Sources */,
+				FC4820BF260373DB00DFC9BE /* Frameworks */,
+				FC4820C0260373DB00DFC9BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC4820C4260373DB00DFC9BE /* PBXTargetDependency */,
+			);
+			name = JCLoadingViewUITests;
+			productName = JCLoadingViewUITests;
+			productReference = FC4820C2260373DB00DFC9BE /* JCLoadingViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC482094260373D800DFC9BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					FC48209B260373D800DFC9BE = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					FC4820B6260373DA00DFC9BE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = FC48209B260373D800DFC9BE;
+					};
+					FC4820C1260373DB00DFC9BE = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = FC48209B260373D800DFC9BE;
+					};
+				};
+			};
+			buildConfigurationList = FC482097260373D800DFC9BE /* Build configuration list for PBXProject "JCLoadingView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC482093260373D800DFC9BE;
+			productRefGroup = FC48209D260373D800DFC9BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC48209B260373D800DFC9BE /* JCLoadingView */,
+				FC4820B6260373DA00DFC9BE /* JCLoadingViewTests */,
+				FC4820C1260373DB00DFC9BE /* JCLoadingViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC48209A260373D800DFC9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC48210226037E1D00DFC9BE /* Main.storyboard in Resources */,
+				FC4820AF260373DA00DFC9BE /* LaunchScreen.storyboard in Resources */,
+				FC4820AC260373DA00DFC9BE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4820B5260373DA00DFC9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4820C0260373DB00DFC9BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEA7A339315CDF5479D24861 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JCLoadingView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA15F1B0E7BB6D68BEF43C1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JCLoadingView/Pods-JCLoadingView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JCLoadingView/Pods-JCLoadingView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JCLoadingView/Pods-JCLoadingView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC482098260373D800DFC9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4820EB26037A1400DFC9BE /* UIView+LoadingView.m in Sources */,
+				FC4820FD26037E1600DFC9BE /* SceneDelegate.m in Sources */,
+				FC4820A7260373D800DFC9BE /* ViewController.m in Sources */,
+				FC4820A1260373D800DFC9BE /* AppDelegate.m in Sources */,
+				FC4820B2260373DA00DFC9BE /* main.m in Sources */,
+				FC4820DA260375BD00DFC9BE /* JCLoadingView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4820B3260373DA00DFC9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4820BC260373DA00DFC9BE /* JCLoadingViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC4820BE260373DB00DFC9BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC4820C7260373DB00DFC9BE /* JCLoadingViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC4820B9260373DA00DFC9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC48209B260373D800DFC9BE /* JCLoadingView */;
+			targetProxy = FC4820B8260373DA00DFC9BE /* PBXContainerItemProxy */;
+		};
+		FC4820C4260373DB00DFC9BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC48209B260373D800DFC9BE /* JCLoadingView */;
+			targetProxy = FC4820C3260373DB00DFC9BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC4820AD260373DA00DFC9BE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC4820AE260373DA00DFC9BE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC4820C9260373DB00DFC9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC4820CA260373DB00DFC9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC4820CC260373DB00DFC9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9662144EF1B812D7C4627E37 /* Pods-JCLoadingView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6K9Q22JTP;
+				INFOPLIST_FILE = JCLoadingView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjhc.JCLoadingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC4820CD260373DB00DFC9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE343F5E09883BEE5AB58885 /* Pods-JCLoadingView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6K9Q22JTP;
+				INFOPLIST_FILE = JCLoadingView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjhc.JCLoadingView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC4820CF260373DB00DFC9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6K9Q22JTP;
+				INFOPLIST_FILE = JCLoadingViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjhc.JCLoadingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCLoadingView.app/JCLoadingView";
+			};
+			name = Debug;
+		};
+		FC4820D0260373DB00DFC9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6K9Q22JTP;
+				INFOPLIST_FILE = JCLoadingViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjhc.JCLoadingViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JCLoadingView.app/JCLoadingView";
+			};
+			name = Release;
+		};
+		FC4820D2260373DB00DFC9BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6K9Q22JTP;
+				INFOPLIST_FILE = JCLoadingViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjhc.JCLoadingViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JCLoadingView;
+			};
+			name = Debug;
+		};
+		FC4820D3260373DB00DFC9BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W6K9Q22JTP;
+				INFOPLIST_FILE = JCLoadingViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zjhc.JCLoadingViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JCLoadingView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC482097260373D800DFC9BE /* Build configuration list for PBXProject "JCLoadingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4820C9260373DB00DFC9BE /* Debug */,
+				FC4820CA260373DB00DFC9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4820CB260373DB00DFC9BE /* Build configuration list for PBXNativeTarget "JCLoadingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4820CC260373DB00DFC9BE /* Debug */,
+				FC4820CD260373DB00DFC9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4820CE260373DB00DFC9BE /* Build configuration list for PBXNativeTarget "JCLoadingViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4820CF260373DB00DFC9BE /* Debug */,
+				FC4820D0260373DB00DFC9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4820D1260373DB00DFC9BE /* Build configuration list for PBXNativeTarget "JCLoadingViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC4820D2260373DB00DFC9BE /* Debug */,
+				FC4820D3260373DB00DFC9BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC482094260373D800DFC9BE /* Project object */;
+}
